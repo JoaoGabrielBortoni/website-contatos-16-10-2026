@@ -11,9 +11,6 @@ import Contatos from "./pages/Contatos";
 import Navbar from "./components/Navbar"; 
 
 import { useContext } from "react"; 
-
-import { createRoot } from "react-dom/client"; 
-
  
 
 function PrivateRoute({ children }) { 
@@ -71,13 +68,3 @@ export default function App() {
 } 
 
  
-
-const container =document.getElementById('root'); 
-
-if(container){ 
-
-    const root = createRoot(container); 
-
-    root.render(<App/>); 
-
-} 
