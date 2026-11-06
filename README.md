@@ -1,31 +1,16 @@
-# Projeto: Contatos com Autenticação (React + JWT)
+# React + Vite
 
-Aplicação React Web com login, registro, logout e rotas privadas, consumindo a API:
-https://api-contatos-auth-04-09-25.onrender.com
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Como rodar
+Currently, two official plugins are available:
 
-```bash
-npm install
-npm run dev
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Acesse o endereço exibido no terminal (normalmente http://localhost:5173).
+## React Compiler
 
-## Estrutura
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-```
-src/
-├── App.jsx                 # Rotas públicas e privadas
-├── main.jsx                # Ponto de entrada
-├── api/api.js              # Axios + interceptor do token JWT
-├── context/AuthContext.jsx # Login/logout global
-├── components/Navbar.jsx   # Barra de navegação
-└── pages/
-    ├── Login.jsx
-    ├── Registrar.jsx
-    └── Contatos.jsx        # Rota protegida
-```
+## Expanding the ESLint configuration
 
-## Observação
-A API está hospedada no Render e pode levar alguns segundos para "acordar" na primeira requisição.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
